@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension NSPredicate {
+public extension NSPredicate {
     static func label(_ label: String) -> NSPredicate {
         NSPredicate(format: "label == %@", label)
     }

@@ -8,7 +8,7 @@
 import Foundation
 import XCTest
 
-extension XCUIElementQuery {
+public extension XCUIElementQuery {
     func matching(label: String) -> XCUIElement {
         element(matching: .label(label))
     }
