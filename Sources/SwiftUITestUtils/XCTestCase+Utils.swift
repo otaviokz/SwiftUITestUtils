@@ -7,7 +7,7 @@
 
 import XCTest
 
-extension XCTestCase {
+public extension XCTestCase {
     func waitExists(_ element: XCUIElement, timeOut: TimeInterval) {
         wait(for: [expectation(block: { element.exists })], timeout: timeOut)
     }
